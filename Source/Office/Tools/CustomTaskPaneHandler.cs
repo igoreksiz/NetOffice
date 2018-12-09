@@ -28,7 +28,7 @@ namespace NetOffice.OfficeApi.Tools
         /// <param name="taskPanes">taskpanes you want to create</param>
         /// <param name="onError">Error callback if somthings fails</param>
         /// <param name="application">host application in base definition</param>
-        /// <param name="addinType">addin class type informations</param>
+        /// <param name="addinType">addin class type information</param>
         /// <param name="addin">addin instance</param>
         /// <param name="callOnCreateTaskPaneInfo">callback to manipulate the process dynamicly</param>
         /// <param name="visibleStateChange">visible changed event handler</param>

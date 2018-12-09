@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NetOffice.OfficeApi.Tools.Informations
+namespace NetOffice.OfficeApi.Tools.Information
 {
     /// <summary>
-    /// Office Application and NetOffice related diagnostic informations
+    /// Office Application and NetOffice related diagnostic information
     /// </summary>
     public class HostInfo : IEnumerable<KeyValuePair<string, string>>
     {

@@ -330,7 +330,7 @@ namespace NetOffice.DeveloperToolbox
         /// display unhandled exception(s) with non-modal ErrorForm instance
         /// </summary>
         /// <param name="sender">source(ignored)</param>
-        /// <param name="e">exception detailed informations</param>
+        /// <param name="e">exception detailed information</param>
         private static void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
         {
             // if its in shutdown(because a heavy error occured) we dont want to show another error again

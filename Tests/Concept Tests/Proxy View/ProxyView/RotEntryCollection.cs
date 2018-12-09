@@ -36,7 +36,7 @@ namespace ProxyView
                     IsCurrentlyRefresh = true;
                     if (null != RotItems)
                         RotItems.Dispose();
-                    RotItems = RunningObjectTable.GetActiveProxyInformations("", "");
+                    RotItems = RunningObjectTable.GetActiveProxyInformation("", "");
                     AddItems();
                     RemoveItems();                   
                 }

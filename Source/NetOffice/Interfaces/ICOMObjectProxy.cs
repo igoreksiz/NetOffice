@@ -4,7 +4,7 @@ using System.ComponentModel;
 namespace NetOffice
 {
     /// <summary>
-    /// Represents a COM proxy wrapper with type informations and access to the underlying proxy
+    /// Represents a COM proxy wrapper with type information and access to the underlying proxy
     /// </summary>
     public interface ICOMObjectProxy
     {
@@ -15,7 +15,7 @@ namespace NetOffice
         object UnderlyingObject { get; }
 
         /// <summary>
-        /// Type informations from UnderlyingObject
+        /// Type information from UnderlyingObject
         /// </summary>
         [Browsable(false), EditorBrowsable(EditorBrowsableState.Advanced)]
         Type UnderlyingType { get; }
@@ -33,13 +33,13 @@ namespace NetOffice
         string InstanceComponentName { get; }
 
         /// <summary>
-        /// Type informations from ICOMObject implementation
+        /// Type information from ICOMObject implementation
         /// </summary>
         [Browsable(false), EditorBrowsable(EditorBrowsableState.Advanced)]
         Type InstanceType { get; }
 
         /// <summary>
-        /// Type informations from ICOMObject contract
+        /// Type information from ICOMObject contract
         /// </summary>
         [Browsable(false), EditorBrowsable(EditorBrowsableState.Advanced)]
         Type ContractType { get; }

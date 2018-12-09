@@ -480,7 +480,7 @@ namespace NetOffice.Running
         /// </summary>
         /// <param name="proxyDisplayName">target display name</param>
         /// <param name="ignoreCase">ignore case when compare the name</param>
-        /// <returns>proxy informations or null if proxy not exists</returns>
+        /// <returns>proxy information or null if proxy not exists</returns>
         public static ProxyInformation GetActiveProxyInformation(string proxyDisplayName, bool ignoreCase = true)
         {
             IEnumMoniker monikerList = null;
@@ -571,13 +571,13 @@ namespace NetOffice.Running
         }
 
         /// <summary>
-        /// Returns all running com proxies + add. informations from the running object table there matched with the input parameters
+        /// Returns all running com proxies + add. information from the running object table there matched with the input parameters
         /// WARNING: the method returns always the first com proxy from the running object table if multiple (match) proxies exists.
         /// </summary>
         /// <param name="componentName">name of the target component</param>
         /// <param name="className">name of the target proxy class name</param>
-        /// <returns>IDisposableEnumeration with proxy informations</returns>
-        public static IDisposableSequence<ProxyInformation> GetActiveProxyInformations(string componentName, string className)
+        /// <returns>IDisposableEnumeration with proxy information</returns>
+        public static IDisposableSequence<ProxyInformation> GetActiveProxyInformation(string componentName, string className)
         {
             IEnumMoniker monikerList = null;
             IRunningObjectTable runningObjectTable = null;
@@ -685,11 +685,11 @@ namespace NetOffice.Running
         }
 
         /// <summary>
-        /// Returns all running com proxies + add. informations from the running object table there matched with the input parameters
+        /// Returns all running com proxies + add. information from the running object table there matched with the input parameters
         /// WARNING: the method returns always the first com proxy from the running object table if multiple (match) proxies exists.
         /// </summary>
-        /// <returns>IDisposableEnumeration with proxy informations</returns>
-        public static IDisposableSequence<ProxyInformation> GetActiveProxyInformations()
+        /// <returns>IDisposableEnumeration with proxy information</returns>
+        public static IDisposableSequence<ProxyInformation> GetActiveProxyInformation()
         {
             IEnumMoniker monikerList = null;
             IRunningObjectTable runningObjectTable = null;

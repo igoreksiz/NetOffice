@@ -11,7 +11,7 @@ using NetOffice.DAOApi.Constants;
 namespace AccessExamplesCS4
 {
     /// <summary>
-    /// Example 4 - Database informations
+    /// Example 4 - Database information
     /// </summary>
     internal partial class Example04 : UserControl, IExample
     {
@@ -44,7 +44,7 @@ namespace AccessExamplesCS4
 
         public string Description
         {
-            get { return "Database informations"; }
+            get { return "Database information"; }
         }
 
         public UserControl Panel

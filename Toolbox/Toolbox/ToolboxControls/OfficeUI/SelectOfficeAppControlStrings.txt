@@ -4,7 +4,7 @@ buttonClose = Abbrechen
 buttonSelect = Auswählen
 [End]
 [1033]
-labelInfo = Get all the UI element informations is a long time operation.
+labelInfo = Get all the UI element information is a long time operation.
 buttonClose = Cancel
 buttonSelect = Proceed
 [End]

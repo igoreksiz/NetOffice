@@ -330,9 +330,9 @@ namespace NetOffice
         }
 
         /// <summary>
-        /// clears factory informations List
+        /// clears factory information List
         /// </summary>
-        public static void ClearFactoryInformations()
+        public static void ClearFactoryInformation()
         {
             bool isLocked = false;
             try

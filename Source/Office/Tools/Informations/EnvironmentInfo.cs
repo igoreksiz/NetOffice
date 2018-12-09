@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NetOffice.OfficeApi.Tools.Informations
+namespace NetOffice.OfficeApi.Tools.Information
 {
     /// <summary>
     /// Environment related utils (Supports also the internal NetOffice infrastructure)

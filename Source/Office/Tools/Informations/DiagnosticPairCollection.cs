@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 
-namespace NetOffice.OfficeApi.Tools.Informations
+namespace NetOffice.OfficeApi.Tools.Information
 {
     /// <summary>
     /// Analyze the current environment in detail and save the result in its collection
@@ -71,7 +71,7 @@ namespace NetOffice.OfficeApi.Tools.Informations
                     list.Add(new DiagnosticPair(item.Key, item.Value));            
             }
 
-            Owner.Infos.GetCustomInformations(this);
+            Owner.Infos.GetCustomInformation(this);
 
             return list;
         }

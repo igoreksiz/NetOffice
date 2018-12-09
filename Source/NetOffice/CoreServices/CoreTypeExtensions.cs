@@ -67,7 +67,7 @@ namespace NetOffice.CoreServices
         }
 
         /// <summary>
-        /// Resolve type informations for an unknown proxy
+        /// Resolve type information for an unknown proxy
         /// </summary>
         /// <param name="value">Core to extend</param>
         /// <param name="typeFactory">corresponding factory from com proxy</param>
@@ -96,7 +96,7 @@ namespace NetOffice.CoreServices
         }
 
         /// <summary>
-        /// Resolve type informations for a proxy by known result contract
+        /// Resolve type information for a proxy by known result contract
         /// </summary>
         /// <param name="value">Core to extend</param>
         /// <param name="contractType">known contract</param>
@@ -130,7 +130,7 @@ namespace NetOffice.CoreServices
 
 
         /// <summary>
-        /// Resolve type informations for a proxy by known result contract
+        /// Resolve type information for a proxy by known result contract
         /// </summary>
         /// <param name="value">Core to extend</param>
         /// <param name="contractType">known contract</param>

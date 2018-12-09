@@ -39,7 +39,7 @@ namespace Excel03AddinCS4
             Factory.Console.WriteLine("Addin has been loaded completely in {0}", LoadingTimeElapsed);
 
             // Enable performance trace in Excel to see all calls >= 3 milliseconds
-            // See tutorials for further informations
+            // See tutorials for further information
             Factory.Settings.PerformanceTrace["NetOffice.ExcelApi"].IntervalMS = 3;
             Factory.Settings.PerformanceTrace["NetOffice.ExcelApi"].Enabled = true;
             Factory.Settings.PerformanceTrace.Alert += PerformanceTrace_Alert;

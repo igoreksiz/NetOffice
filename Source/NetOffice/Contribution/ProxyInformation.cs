@@ -44,7 +44,7 @@ namespace NetOffice.Contribution
         /// Creates new instance of the class
         /// </summary>
         /// <param name="comProxy">target proxy</param>
-        /// <returns>ProxyInformations instance</returns>
+        /// <returns>ProxyInformation instance</returns>
         /// <exception cref ="ArgumentNullException">argument is null</exception>
         public static ProxyInformation Create(object comProxy)
         {

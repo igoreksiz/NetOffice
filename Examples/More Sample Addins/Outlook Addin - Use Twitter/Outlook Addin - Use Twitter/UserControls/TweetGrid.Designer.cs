@@ -248,7 +248,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(256, 76);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Set your account informations in the settings area and enable the Twitter client." +
+            this.label1.Text = "Set your account information in the settings area and enable the Twitter client." +
     "";
             // 
             // panel2

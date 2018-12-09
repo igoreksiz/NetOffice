@@ -32,7 +32,7 @@ Public Class Addin
         Factory.Console.WriteLine("Addin has been loaded completely in {0}", LoadingTimeElapsed)
 
         ' Enable performance trace in PowerPoint to see all calls >= 3 milliseconds
-        ' See tutorials for further informations
+        ' See tutorials for further information
         Factory.Settings.PerformanceTrace("NetOffice.PowerPointApi").IntervalMS = 3
         Factory.Settings.PerformanceTrace("NetOffice.PowerPointApi").Enabled = True
 

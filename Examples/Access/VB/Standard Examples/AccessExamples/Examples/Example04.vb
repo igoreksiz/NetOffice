@@ -28,7 +28,7 @@ Public Class Example04
 
     Public ReadOnly Property Description As String Implements ExampleBase.IExample.Description
         Get
-            Return "Database informations"
+            Return "Database information"
         End Get
     End Property
 

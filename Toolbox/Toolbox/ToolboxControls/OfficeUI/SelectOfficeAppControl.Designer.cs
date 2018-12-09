@@ -179,7 +179,7 @@
             this.labelInfo.Name = "labelInfo";
             this.labelInfo.Size = new System.Drawing.Size(316, 13);
             this.labelInfo.TabIndex = 72;
-            this.labelInfo.Text = "Get all the UI element informations is a long time operation.";
+            this.labelInfo.Text = "Get all the UI element information is a long time operation.";
             // 
             // SelectOfficeAppControl
             // 

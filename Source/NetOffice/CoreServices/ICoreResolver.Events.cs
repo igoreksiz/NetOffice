@@ -38,7 +38,7 @@ namespace NetOffice.CoreServices
         public Type Contract { get; private set; }
 
         /// <summary>
-        /// Detailed proxy informations
+        /// Detailed proxy information
         /// </summary>
         public ProxyInformation Proxy { get; private set; }
 

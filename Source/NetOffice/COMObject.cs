@@ -980,7 +980,7 @@ namespace NetOffice
         }
 
         /// <summary>
-        /// NetOffice property: Type informations from UnderlyingObject
+        /// NetOffice property: Type information from UnderlyingObject
         /// </summary>
         [EditorBrowsable(EditorBrowsableState.Never), Browsable(false), Category("NetOffice")]
         public Type UnderlyingType
@@ -1034,7 +1034,7 @@ namespace NetOffice
         }
 
         /// <summary>
-        /// Type informations from ICOMObject contract
+        /// Type information from ICOMObject contract
         /// </summary>
         [Browsable(false), EditorBrowsable(EditorBrowsableState.Advanced)]
         public virtual Type ContractType
@@ -1061,7 +1061,7 @@ namespace NetOffice
         public event OnDisposeEventHandler OnDispose;
 
         /// <summary>
-        /// NetOffice property: returns informations the instance is already disposed
+        /// NetOffice property: returns information the instance is already disposed
         /// </summary>
         [EditorBrowsable(EditorBrowsableState.Advanced), Browsable(false), Category("NetOffice")]
         public bool IsDisposed

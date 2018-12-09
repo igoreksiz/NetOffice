@@ -39,9 +39,9 @@ namespace ProxyView
                     if (null != WindowItems)
                         WindowItems.Dispose();
                     if (Properties.Settings.Default.ShowAllAccessible)
-                        WindowItems = RunningWindowTable.GetAccessibleProxyInformations(RunningWindowTable.ProxyType.All);
+                        WindowItems = RunningWindowTable.GetAccessibleProxyInformation(RunningWindowTable.ProxyType.All);
                     else
-                        WindowItems = RunningWindowTable.GetAccessibleProxyInformations(RunningWindowTable.ProxyType.AllSupportedOfficeApplications);
+                        WindowItems = RunningWindowTable.GetAccessibleProxyInformation(RunningWindowTable.ProxyType.AllSupportedOfficeApplications);
                     AddItems();
                     RemoveItems();
                 }

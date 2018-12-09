@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Reflection;
 using System.Globalization;
 using System.Security.Principal;
-using NetOffice.OfficeApi.Tools.Informations;
+using NetOffice.OfficeApi.Tools.Information;
 
 namespace NetOffice.OfficeApi.Tools.Contribution
 {
@@ -303,7 +303,7 @@ namespace NetOffice.OfficeApi.Tools.Contribution
         }
 
         /// <summary>
-        /// Various system informations
+        /// Various system information
         /// </summary>
         public Infos Infos
         {
@@ -346,7 +346,7 @@ namespace NetOffice.OfficeApi.Tools.Contribution
         }
 
         /// <summary>
-        /// Assembly informations used in AssemblyInfo
+        /// Assembly information used in AssemblyInfo
         /// </summary>
         protected internal Assembly OwnerAssembly
         {
@@ -369,7 +369,7 @@ namespace NetOffice.OfficeApi.Tools.Contribution
         /// Try to detect the registry load location from an addin
         /// This implementation does not handle the fact that addins can bew loaded from non specific application key like "Software\Microsoft\Office\Addins"
         /// </summary>
-        /// <param name="addinType">addin class type informations</param>
+        /// <param name="addinType">addin class type information</param>
         /// <param name="applicationType">which office application</param>
         /// <returns>location or unkown</returns>
         public static RegistryLocationResult TryFindAddinLoadLocation(Type addinType, ApplicationIdentifiers.ApplicationType applicationType)

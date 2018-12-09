@@ -1634,7 +1634,7 @@
             this.labelDebugHint.Size = new System.Drawing.Size(550, 13);
             this.labelDebugHint.TabIndex = 93;
             this.labelDebugHint.Text = "Check your assembly alyways in the debug version. an optimized release assembly l" +
-    "ost some informations.";
+    "ost some information.";
             this.labelDebugHint.Visible = false;
             // 
             // panel1

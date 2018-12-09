@@ -26,11 +26,11 @@ namespace NetOffice
         the behavior that Netoffice returns a COMDynamicObject instance if its
         failed to resolve a wrapper class for a com proxy.
 
-        See tutorials for further informations.
+        See tutorials for further information.
     */
 
     /// <summary>
-    /// Represents a managed COM proxy with dynamic runtime type informations.
+    /// Represents a managed COM proxy with dynamic runtime type information.
     /// </summary>
     [DebuggerDisplay("{InstanceFriendlyName}")]
     [TypeConverter(typeof(Converter.COMDynamicObjectExpandableObjectConverter))]
@@ -536,7 +536,7 @@ namespace NetOffice
 
             COMTypes.ITypeInfo typeInfo = dispatch.GetTypeInfo(0, 0);
             if (null == typeInfo)
-                throw new COMException("Unable to get type informations.");
+                throw new COMException("Unable to get type information.");
 
             IntPtr typeAttrPointer;
             typeInfo.GetTypeAttr(out typeAttrPointer);
@@ -1023,7 +1023,7 @@ namespace NetOffice
         }
 
         /// <summary>
-        /// Type informations from ICOMObject instance
+        /// Type information from ICOMObject instance
         /// </summary>
         [Browsable(false), EditorBrowsable(EditorBrowsableState.Advanced)]
         public Type InstanceType
@@ -1035,7 +1035,7 @@ namespace NetOffice
         }
 
         /// <summary>
-        /// Type informations from ICOMObject contract
+        /// Type information from ICOMObject contract
         /// </summary>
         [Browsable(false), EditorBrowsable(EditorBrowsableState.Advanced)]
         public virtual Type ContractType

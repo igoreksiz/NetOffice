@@ -97,7 +97,7 @@ namespace NetOffice.CoreServices.Internal
         #region Methods
 
         /// <summary>
-        /// Removes all factory informations from the instance
+        /// Removes all factory information from the instance
         /// </summary>
         internal void Clear()
         {
@@ -109,7 +109,7 @@ namespace NetOffice.CoreServices.Internal
         }
 
         /// <summary>
-        /// Removes all dependent assembly informations from the instance
+        /// Removes all dependent assembly information from the instance
         /// </summary>
         internal void ClearDependentAssemblies()
         {

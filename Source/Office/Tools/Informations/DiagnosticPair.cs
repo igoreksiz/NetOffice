@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 
-namespace NetOffice.OfficeApi.Tools.Informations
+namespace NetOffice.OfficeApi.Tools.Information
 {
     /// <summary>
     /// Represents a diagnostics subset

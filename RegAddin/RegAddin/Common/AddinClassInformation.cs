@@ -7,9 +7,9 @@ using System.Text;
 
 namespace RegAddin.Common
 {
-    internal class AddinClassInformations
+    internal class AddinClassInformation
     {
-        private AddinClassInformations(string assemblyName, string assemblyVersion, string assemblyCulture, string assemblyToken,
+        private AddinClassInformation(string assemblyName, string assemblyVersion, string assemblyCulture, string assemblyToken,
             string runtimeVersion, string[] classesRoot, string progId, string fullClassName, string id, string codebase)
         {
             AssemblyName = assemblyName;
@@ -25,7 +25,7 @@ namespace RegAddin.Common
             ComponentCategoryId = "62C8FE65-4EBB-45E7-B440-6E39B2CDBF29";
         }
 
-        internal static AddinClassInformations Create(Assembly addinAssembly, IEnumerable<object> assemblyAttributes,
+        internal static AddinClassInformation Create(Assembly addinAssembly, IEnumerable<object> assemblyAttributes,
                        SingletonSettings.UnRegisterMode mode, Type addinClassType, IEnumerable<object> addinClassAttributes)
         {
             AssemblyName binaryHeader = addinAssembly.GetName();
@@ -54,14 +54,14 @@ namespace RegAddin.Common
             string id = AttributeReflection.GetAttribute<GuidAttribute>(addinClassAttributes).Value;
             string codebase = addinAssembly.CodeBase;
 
-            AddinClassInformations result = new AddinClassInformations(
+            AddinClassInformation result = new AddinClassInformation(
                 assemblyName, assemblyVersion, assemblyCulture, assemblyToken,
                 runtimeVersion, classesRoot, progid, fullClassName, id, codebase);
 
             return result;
         }
 
-        internal static AddinClassInformations Create(Assembly addinAssembly, IEnumerable<object> assemblyAttributes,
+        internal static AddinClassInformation Create(Assembly addinAssembly, IEnumerable<object> assemblyAttributes,
                         SingletonSettings.RegisterMode mode, Type addinClassType, IEnumerable<object> addinClassAttributes)
         {
             AssemblyName binaryHeader = addinAssembly.GetName();
@@ -76,7 +76,7 @@ namespace RegAddin.Common
             string id = AttributeReflection.GetAttribute<GuidAttribute>(addinClassAttributes).Value;
             string codebase = addinAssembly.CodeBase;
 
-            AddinClassInformations result = new AddinClassInformations(
+            AddinClassInformation result = new AddinClassInformation(
                 assemblyName, assemblyVersion, assemblyCulture, assemblyToken,
                 runtimeVersion, classesRoot, progid, fullClassName, id, codebase);
 

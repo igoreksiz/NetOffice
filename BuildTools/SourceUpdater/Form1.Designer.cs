@@ -119,7 +119,7 @@
             this.label3.Size = new System.Drawing.Size(624, 13);
             this.label3.TabIndex = 8;
             this.label3.Text = "This tool update the existing NetOffice source folder with a newer version. (repl" +
-                "ace by windows explorer kills .svn meta informations)";
+                "ace by windows explorer kills .svn meta information)";
             // 
             // Form1
             // 

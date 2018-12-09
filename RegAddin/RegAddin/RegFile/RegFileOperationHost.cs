@@ -234,7 +234,7 @@ namespace RegAddin.RegFile
         private string CreateRegistryFileContent(Assembly addinAssembly, IEnumerable<object> assemblyAttributes, SingletonSettings.RegisterMode mode,
             Type addinClassType, IEnumerable<object> addinClassAttributes)
         {
-            AddinClassInformations addinClass = AddinClassInformations.Create(
+            AddinClassInformation addinClass = AddinClassInformation.Create(
                             addinAssembly, assemblyAttributes, mode, addinClassType, addinClassAttributes);
 
             StringBuilder content = new StringBuilder();

@@ -127,7 +127,7 @@ namespace RegAddin.Unregister
         private void DeleteRegistryEntries(Assembly addinAssembly, IEnumerable<object> assemblyAttributes, SingletonSettings.UnRegisterMode mode,
                        Type addinClassType, IEnumerable<object> addinClassAttributes)
         {
-            AddinClassInformations addinClass = AddinClassInformations.Create(
+            AddinClassInformation addinClass = AddinClassInformation.Create(
                            addinAssembly, assemblyAttributes, mode, addinClassType, addinClassAttributes);
 
             Registry registry = new Registry();

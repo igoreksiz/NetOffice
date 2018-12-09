@@ -79,9 +79,9 @@ namespace NetOffice.DeveloperToolbox.ToolboxControls.ProxyView
                     if (null != WindowItems)
                         WindowItems.Dispose();
                     if (Settings.ShowAllAccessible)
-                        WindowItems = RunningWindowTable.GetAccessibleProxyInformations(RunningWindowTable.ProxyType.All);
+                        WindowItems = RunningWindowTable.GetAccessibleProxyInformation(RunningWindowTable.ProxyType.All);
                     else
-                        WindowItems = RunningWindowTable.GetAccessibleProxyInformations(RunningWindowTable.ProxyType.AllSupportedOfficeApplications);
+                        WindowItems = RunningWindowTable.GetAccessibleProxyInformation(RunningWindowTable.ProxyType.AllSupportedOfficeApplications);
                 }
                 catch (Exception)
                 {

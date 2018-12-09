@@ -9,7 +9,7 @@ using NetOffice.Exceptions;
 namespace NetOffice.Loader
 {
     /// <summary>
-    /// Contains loaded factory informations
+    /// Contains loaded factory information
     /// </summary>
     public class FactoryList : IEnumerable<ITypeFactory>
     {

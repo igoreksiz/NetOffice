@@ -4,7 +4,7 @@ using System.Reflection;
 namespace NetOffice.DeveloperToolbox
 {
     /// <summary>
-    /// provides assembly informations
+    /// provides assembly information
     /// </summary>
     internal static class AssemblyInfo
     {

@@ -88,7 +88,7 @@ namespace NetOffice.DeveloperToolbox.ToolboxControls.ProjectWizard.Controls
         {
             get
             {
-                return "Informations about your assembly.";
+                return "Information about your assembly.";
             }
         }
 
@@ -96,7 +96,7 @@ namespace NetOffice.DeveloperToolbox.ToolboxControls.ProjectWizard.Controls
         {
             get
             {
-                return "These informations are visible for your customers.";
+                return "These information are visible for your customers.";
             }
         }
 

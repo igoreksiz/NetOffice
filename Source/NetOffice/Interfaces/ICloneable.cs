@@ -20,7 +20,7 @@ namespace NetOffice
     /// The used lifetime system is implemented by NetOffice and works exactly like the COM Standard and the RCW System(which implements also its own reference counter).
     /// NetOffice want free the underlying proxy when there is no ICOMObject instance anymore that holding the underlying proxy.
     /// Remarks: It is necessary to call Dispose for an instance in NetOffice, the Garbage Collector isn't an option here.
-    /// See NetOffice Lifecyle Tutorials for further informations.
+    /// See NetOffice Lifecyle Tutorials for further information.
     /// </summary>
     /// <typeparam name="T">ICOMObject type implementation as any</typeparam>
     /// <exception cref="CloneException">An unexpected error occured. See inner exception(s) for details.</exception>

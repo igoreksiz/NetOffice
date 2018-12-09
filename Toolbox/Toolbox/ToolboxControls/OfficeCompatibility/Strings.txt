@@ -23,6 +23,6 @@ labelVersionNotOk = = Version is not compatible
 linkLabelNotSupported = = Version is unsupported
 buttonRefresh = Refresh
 buttonReport = Report
-labelDebugHint = Check your assembly alyways in the debug version. an optimized release assembly lost some informations.
+labelDebugHint = Check your assembly alyways in the debug version. an optimized release assembly lost some information.
 labelNetOfficeVersion = NO version or below compatible
 [End]

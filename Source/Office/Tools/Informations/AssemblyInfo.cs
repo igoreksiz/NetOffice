@@ -4,7 +4,7 @@ using System.Reflection;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NetOffice.OfficeApi.Tools.Informations
+namespace NetOffice.OfficeApi.Tools.Information
 {
     /// <summary>
     /// Assembly related helper tools (Supports also the internal NetOffice Tools infrastructure)
