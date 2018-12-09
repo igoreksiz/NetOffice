@@ -6,7 +6,7 @@ pool:
 variables:
   solution: Source/NetOffice.sln
   buildPlatform: Any CPU
-  buildConfiguration: Debug, Release
+  buildConfiguration: Debug
 
 steps:
 - task: NuGetToolInstaller@0
