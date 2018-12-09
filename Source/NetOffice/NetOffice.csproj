@@ -1,7 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <Import Project="..\..\.build\Common.props" />
   <PropertyGroup>
-    <TargetFrameworks>net40;net45</TargetFrameworks>
+    <TargetFrameworks>net40;net45;netcoreapp3.0</TargetFrameworks>
     <AssemblyTitle>NetOffice</AssemblyTitle>
     <Description>NetOffice core library.</Description>
   </PropertyGroup>
@@ -9,15 +9,30 @@
     <PackageId>NetOfficeFw.NetOffice</PackageId>
     <Title>NetOffice Core Library</Title>
     <PackageTags>netoffice netofficefw NetOffice.Core office excel word outlook powerpoint access project visio publisher interop wrapper net40 net45 vsto</PackageTags>
+    <Company>NetOfficeFw</Company>
+    <Product>Netoffice</Product>
+    <Description>NetOffice Core Api</Description>
+    <Copyright>Copyright © 2012-2018 Sebastian Lange</Copyright>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <FileVersion>2.0.0.0</FileVersion>
+    <VersionPrefix>2.0.0</VersionPrefix>
+    <VersionSuffix>dev</VersionSuffix>
+    <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>NetOffice_v4.0.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
-  <ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' != 'netcoreapp3.0'">
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net45'">
+    <DefineConstants>HAVE_APP_DOMAIN;$(AdditionalConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net40'">
+    <DefineConstants>HAVE_APP_DOMAIN;NET40;$(AdditionalConstants)</DefineConstants>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Update="Contribution\Controls\InstanceMonitor.cs">
       <SubType>UserControl</SubType>
