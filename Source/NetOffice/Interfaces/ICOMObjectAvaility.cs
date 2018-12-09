@@ -5,9 +5,9 @@ using NetOffice.Exceptions;
 namespace NetOffice
 {
     /// <summary>
-    /// Represents runtime availity services for a COM Proxy
+    /// Represents runtime availability services for a COM Proxy
     /// </summary>
-    public interface ICOMObjectAvaility
+    public interface ICOMObjectAvailability
     {
         /// <summary>
         /// Returns information the proxy provides a method or property.
@@ -15,7 +15,7 @@ namespace NetOffice
         /// </summary>
         /// <param name="name">name of the enitity</param>
         /// <returns>true if available, otherwise false</returns>
-        /// <exception cref="AvailityException">Unexpected error, see inner exception(s) for details.</exception>
+        /// <exception cref="AvailabilityException">Unexpected error, see inner exception(s) for details.</exception>
         bool EntityIsAvailable(string name);
 
         /// <summary>
@@ -25,7 +25,7 @@ namespace NetOffice
         /// <param name="name">name of the enitity</param>
         /// <param name="searchType">indicate the kind of enitity the caller is looking for</param>
         /// <returns>true if available, otherwise false</returns>
-        /// <exception cref="AvailityException">Unexpected error, see inner exception(s) for details.</exception>
-        bool EntityIsAvailable(string name, Availity.SupportedEntityType searchType);
+        /// <exception cref="AvailabilityException">Unexpected error, see inner exception(s) for details.</exception>
+        bool EntityIsAvailable(string name, Availability.SupportedEntityType searchType);
     }
 }

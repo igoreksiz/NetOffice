@@ -10,7 +10,7 @@ using System.Collections;
 using System.Linq;
 using System.Linq.Expressions;
 using NetOffice.Resolver;
-using NetOffice.Availity;
+using NetOffice.Availability;
 using NetOffice.Attributes;
 using NetOffice.Dynamics;
 using NetOffice.Exceptions;
@@ -1348,7 +1348,7 @@ namespace NetOffice
 
         #endregion
 
-        #region ICOMObjectAvaility
+        #region ICOMObjectAvailability
 
         /// <summary>
         /// NetOffice method: Returns information the proxy provides a method or property.
@@ -1356,7 +1356,7 @@ namespace NetOffice
         /// </summary>
         /// <param name="name">name of the enitity</param>
         /// <returns>true if available, otherwise false</returns>
-        /// <exception cref="AvailityException">Unexpected error, see inner exception(s) for details.</exception>
+        /// <exception cref="AvailabilityException">Unexpected error, see inner exception(s) for details.</exception>
         public bool EntityIsAvailable(string name)
         {
             return EntityIsAvailable(name, SupportedEntityType.Both);
@@ -1369,7 +1369,7 @@ namespace NetOffice
         /// <param name="name">name of the enitity</param>
         /// <param name="searchType">indicate the kind of enitity the caller is looking for</param>
         /// <returns>true if available, otherwise false</returns>
-        /// <exception cref="AvailityException">Unexpected error, see inner exception(s) for details.</exception>
+        /// <exception cref="AvailabilityException">Unexpected error, see inner exception(s) for details.</exception>
         public bool EntityIsAvailable(string name, SupportedEntityType searchType)
         {
             return new SupportedEntityFinder().Find(Factory, ref _listSupportedEntities, searchType, UnderlyingObject, name);

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using NetOffice.Exceptions;
 using NetOffice.CoreServices;
 
-namespace NetOffice.Availity
+namespace NetOffice.Availability
 {
     /// <summary>
     /// Performs a cache supported search to analyze at runtime a proxy supports a method or property
@@ -22,7 +22,7 @@ namespace NetOffice.Availity
         /// <param name="proxy">target com proxy</param>
         /// <param name="name">name of the target entity</param>
         /// <returns>true if supported, otherwise false</returns>
-        /// <exception cref="AvailityException">An unexpected error occurs. See inner exception(s) for details.</exception>
+        /// <exception cref="AvailabilityException">An unexpected error occurs. See inner exception(s) for details.</exception>
         internal bool Find(Core factory, ref Dictionary<string,string> list, SupportedEntityType searchType, object proxy, string name)
         {
             try
@@ -73,7 +73,7 @@ namespace NetOffice.Availity
             }
             catch (Exception exception)
             {
-                throw new AvailityException(exception);
+                throw new AvailabilityException(exception);
             }            
         }
 
