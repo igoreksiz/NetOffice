@@ -1,15 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\.build\Common.props" />
   <PropertyGroup>
     <TargetFrameworks>net40;net45</TargetFrameworks>
     <AssemblyTitle>OWC10</AssemblyTitle>
-    <Company>NetOfficeFw</Company>
-    <Product>NetOffice</Product>
-    <Description>Netoffice OWC10 Api</Description>
-    <Copyright>Copyright © 2012-2018 Sebastian Lange</Copyright>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <FileVersion>2.0.0.0</FileVersion>
-    <VersionPrefix>2.0.0</VersionPrefix>
-    <VersionSuffix>dev</VersionSuffix>
+    <Description>NetOffice OWC10 Api</Description>
     <RootNamespace>NetOffice.OWC10Api</RootNamespace>
   </PropertyGroup>
   <PropertyGroup>

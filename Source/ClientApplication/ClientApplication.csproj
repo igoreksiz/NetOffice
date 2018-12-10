@@ -1,4 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\.build\Common.props" />
   <PropertyGroup>
     <TargetFrameworks>net40;net45</TargetFrameworks>
     <OutputType>WinExe</OutputType>

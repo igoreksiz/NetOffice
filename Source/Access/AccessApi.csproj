@@ -1,15 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\.build\Common.props" />
   <PropertyGroup>
     <TargetFrameworks>net40;net45</TargetFrameworks>
     <AssemblyTitle>Access</AssemblyTitle>
-    <Company>NetOfficeFw</Company>
-    <Product>NetOffice</Product>
-    <Description>Netoffice Access Api</Description>
-    <Copyright>Copyright © 2012-2018 Sebastian Lange</Copyright>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <FileVersion>2.0.0.0</FileVersion>
-    <VersionPrefix>2.0.0</VersionPrefix>
-    <VersionSuffix>dev</VersionSuffix>
+    <Description>NetOffice Access Api</Description>
     <RootNamespace>NetOffice.AccessApi</RootNamespace>
   </PropertyGroup>
   <PropertyGroup>

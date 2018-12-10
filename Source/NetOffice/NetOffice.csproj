@@ -1,15 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\.build\Common.props" />
   <PropertyGroup>
     <TargetFrameworks>net40;net45</TargetFrameworks>
     <AssemblyTitle>NetOffice</AssemblyTitle>
-    <Company>NetOfficeFw</Company>
-    <Product>Netoffice</Product>
     <Description>NetOffice Core Api</Description>
-    <Copyright>Copyright © 2012-2018 Sebastian Lange</Copyright>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <FileVersion>2.0.0.0</FileVersion>
-    <VersionPrefix>2.0.0</VersionPrefix>
-    <VersionSuffix>dev</VersionSuffix>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
