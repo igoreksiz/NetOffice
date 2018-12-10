@@ -3,8 +3,9 @@
   <PropertyGroup>
     <TargetFrameworks>net40;net45</TargetFrameworks>
     <AssemblyTitle>ADODB</AssemblyTitle>
-    <Description>NetOffice ADODB Api</Description>
+    <Description>NetOffice wrapper for Microsoft ActiveX Data Objects Library.</Description>
     <RootNamespace>NetOffice.ADODBApi</RootNamespace>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>

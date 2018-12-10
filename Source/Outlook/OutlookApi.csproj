@@ -3,8 +3,13 @@
   <PropertyGroup>
     <TargetFrameworks>net40;net45</TargetFrameworks>
     <AssemblyTitle>Outlook</AssemblyTitle>
-    <Description>NetOffice Outlook Api</Description>
+    <Description>NetOffice wrapper for Microsoft Outlook Object Library.</Description>
     <RootNamespace>NetOffice.OutlookApi</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageId>NetOfficeFw.Outlook</PackageId>
+    <Title>NetOffice OutlookApi Library</Title>
+    <PackageTags>netoffice netofficefw netoffice.core office Outlook interop wrapper net40 net45 vsto</PackageTags>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>

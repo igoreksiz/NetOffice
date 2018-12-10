@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project>
   <PropertyGroup>
-    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <RepositoryRootDir>$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), 'LICENSE.txt'))\</RepositoryRootDir>
   </PropertyGroup>
 
   <!--
@@ -15,7 +15,7 @@
   </PropertyGroup>
 
   <!--
-    NetOffice packages information
+    NetOffice assembly information
   -->
   <PropertyGroup>
     <Company>NetOfficeFw</Company>
@@ -23,4 +23,23 @@
     <Description>NetOffice library.</Description>
     <Copyright>Copyright © 2012-2018 Sebastian Lange</Copyright>
   </PropertyGroup>
+
+  <!--
+    NetOffice package information
+  -->
+  <PropertyGroup>
+    <Authors>Sebastian Lange, Jozef Izso</Authors>
+    <PackageDescription></PackageDescription>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/NetOfficeFw/NetOffice</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/NetOfficeFw/NetOffice-Assets/master/NetOfficeLogo_200x200.png</PackageIconUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <PackageOutputPath>$(RepositoryRootDir)artifacts\</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="$(RepositoryRootDir)LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)" />
+  </ItemGroup>
 </Project>

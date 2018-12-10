@@ -3,8 +3,9 @@
   <PropertyGroup>
     <TargetFrameworks>net40;net45</TargetFrameworks>
     <AssemblyTitle>MSDATASRC</AssemblyTitle>
-    <Description>NetOffice MSDATASRC Api</Description>
+    <Description>NetOffice wrapper for Microsoft Data Source Interfaces Library.</Description>
     <RootNamespace>NetOffice.MSDATASRCApi</RootNamespace>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
