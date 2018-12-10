@@ -9,18 +9,32 @@
   -->
   <PropertyGroup>
     <VersionPrefix>2.0.0</VersionPrefix>
-    <VersionSuffix>dev</VersionSuffix>
+    <VersionSuffix>dev1</VersionSuffix>
     <AssemblyVersion>$(VersionPrefix).0</AssemblyVersion>
     <FileVersion>$(AssemblyVersion)</FileVersion>
   </PropertyGroup>
 
   <!--
-    NetOffice packages information
+    NetOffice assembly information
   -->
   <PropertyGroup>
     <Company>NetOfficeFw</Company>
     <Product>NetOffice</Product>
     <Description>NetOffice library.</Description>
     <Copyright>Copyright © 2012-2018 Sebastian Lange</Copyright>
+  </PropertyGroup>
+
+  <!--
+    NetOffice package information
+  -->
+  <PropertyGroup>
+    <Authors>Sebastian Lange, Jozef Izso</Authors>
+    <PackageDescription></PackageDescription>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <!-- <PackageLicenseUrl>https://raw.githubusercontent.com/NetOfficeFw/NetOffice/master/LICENSE.txt</PackageLicenseUrl> -->
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/NetOfficeFw/NetOffice</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/NetOfficeFw/NetOffice-Assets/master/NetOfficeLogo_200x200.png</PackageIconUrl>
+    <IncludeSymbols>true</IncludeSymbols>
   </PropertyGroup>
 </Project>

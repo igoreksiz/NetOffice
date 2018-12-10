@@ -5,6 +5,7 @@
     <AssemblyTitle>VBIDE</AssemblyTitle>
     <Description>NetOffice VBIDE Api</Description>
     <RootNamespace>NetOffice.VBIDEApi</RootNamespace>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>

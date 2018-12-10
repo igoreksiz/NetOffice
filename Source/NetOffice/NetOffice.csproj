@@ -4,6 +4,7 @@
     <TargetFrameworks>net40;net45</TargetFrameworks>
     <AssemblyTitle>NetOffice</AssemblyTitle>
     <Description>NetOffice Core Api</Description>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>

@@ -5,6 +5,7 @@
     <AssemblyTitle>Office</AssemblyTitle>
     <Description>NetOffice Office Api</Description>
     <RootNamespace>NetOffice.OfficeApi</RootNamespace>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>

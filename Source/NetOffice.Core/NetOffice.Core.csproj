@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\.build\Common.props" />
+  <PropertyGroup>
+    <TargetFrameworks>net40;net45</TargetFrameworks>
+    <AssemblyTitle>NetOffice.Core</AssemblyTitle>
+    <Description>NetOffice Core Api</Description>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageId>NetOfficeFw.Core</PackageId>
+    <Title>NetOfficeFw.Core</Title>
+    <PackageTags>netoffice netofficefw NetOffice.Core office excel word outlook powerpoint access project visio publisher interop wrapper net40 net45 vsto</PackageTags>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetOffice\NetOffice.csproj" Type="project" />
+    <ProjectReference Include="..\Office\OfficeApi.csproj" Type="project" />
+    <ProjectReference Include="..\VBIDE\VBIDEApi.csproj" Type="project" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)" />
+    <Content Include="tools\*.ps1" Pack="true" PackagePath="tools\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+  </PropertyGroup>
+
+  <Target Name="CopyProjectReferencesToPackage" DependsOnTargets="ResolveReferences">
+    <ItemGroup>
+      <BuildOutputInPackage Include="@(ReferenceCopyLocalPaths->WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))" />
+    </ItemGroup>
+  </Target>
+</Project>
