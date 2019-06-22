@@ -7,6 +7,8 @@ variables:
   solution: Source/NetOffice.sln
   buildPlatform: Any CPU
   buildConfiguration: Debug
+  VersionSuffix: 'alpha-$(Build.BuildId)'
+  BuildNumber: $(Build.BuildId)
 
 steps:
 - task: NuGetToolInstaller@0
@@ -21,6 +23,6 @@ steps:
     vsVersion: '16.0'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-    msbuildArgs: '/t:Build;Pack /p:VersionSuffix="alpha" /p:BuildNumber="$(Build.BuildId)"'
+    msbuildArgs: '/t:Build;Pack /p:VersionSuffix="$(VersionSuffix)" /p:BuildNumber="$(BuildNumber)"'
     createLogFile: true
     logFileVerbosity: 'detailed'
