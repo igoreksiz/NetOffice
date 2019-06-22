@@ -27,5 +27,7 @@ steps:
     createLogFile: true
     logFileVerbosity: 'detailed'
 
-- publish: 'artifacts'
-  artifact: 'NetOffice packages'
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: 'artifacts'
+    artifactName: 'NetOffice packages'
