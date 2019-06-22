@@ -1,7 +1,7 @@
 # NetOffice project build pipeline
 
 pool:
-  vmImage: 'VS2017-Win2016'
+  vmImage: 'windows-2019'
 
 variables:
   solution: Source/NetOffice.sln
@@ -18,5 +18,9 @@ steps:
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
+    vsVersion: '16.0'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+    msbuildArgs: '/t:Build;Pack'
+    createLogFile: true
+    logFileVerbosity: 'detailed'
