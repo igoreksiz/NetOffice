@@ -26,3 +26,6 @@ steps:
     msbuildArgs: '/t:Build;Pack /p:VersionSuffix="$(VersionSuffix)" /p:BuildNumber="$(BuildNumber)"'
     createLogFile: true
     logFileVerbosity: 'detailed'
+
+- publish: 'artifacts'
+  artifact: 'NetOffice packages'
