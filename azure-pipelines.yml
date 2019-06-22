@@ -18,6 +18,7 @@ steps:
     restoreSolution: '$(solution)'
 
 - task: VSBuild@1
+  displayName: Build NetOffice
   inputs:
     solution: '$(solution)'
     vsVersion: '16.0'
@@ -28,11 +29,13 @@ steps:
     logFileVerbosity: 'detailed'
 
 - task: PublishBuildArtifacts@1
+  displayName: Publish NetOffice artifacts
   inputs:
     pathtoPublish: 'artifacts'
     artifactName: 'NetOffice packages'
 
 - task: NuGetCommand@2
+  displayName: Push NetOffice packages to MyGet.org
   inputs:
     command: push
     packagesToPush: 'artifacts/**/*.nupkg'
