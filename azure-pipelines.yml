@@ -21,6 +21,6 @@ steps:
     vsVersion: '16.0'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-    msbuildArgs: '/t:Build;Pack /p:VersionSuffix="alpha" /p:BuildNumber="$(BuildID)"'
+    msbuildArgs: '/t:Build;Pack /p:VersionSuffix="alpha" /p:BuildNumber="$(Build.BuildId)"'
     createLogFile: true
     logFileVerbosity: 'detailed'
