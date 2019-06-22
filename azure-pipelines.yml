@@ -31,3 +31,10 @@ steps:
   inputs:
     pathtoPublish: 'artifacts'
     artifactName: 'NetOffice packages'
+
+- task: NuGetCommand@2
+  inputs:
+    command: push
+    packagesToPush: 'artifacts/**/*.nupkg'
+    nuGetFeedType: external
+    publishFeedCredentials: 'MyGet NetOffice feed'
