@@ -29,6 +29,12 @@ steps:
     logFileVerbosity: 'detailed'
 
 - task: PublishBuildArtifacts@1
+  displayName: Publish NetOffice assemblies
+  inputs:
+    pathtoPublish: 'Source\ClientApplication\bin\$(buildConfiguration)'
+    artifactName: 'NetOffice Assemblies'
+
+- task: PublishBuildArtifacts@1
   displayName: Publish NetOffice artifacts
   inputs:
     pathtoPublish: 'artifacts'
