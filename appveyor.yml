@@ -42,6 +42,7 @@ after_test:
       xcopy /y "Breaking Changes.txt" build_tmp\
       xcopy /y BugFixes.txt build_tmp\
       xcopy /y ChangeLog.txt build_tmp\
+      xcopy /y LICENSE.txt build_tmp\
   - cmd: |
       cd build_tmp
       7z a -tzip ..\artifacts\NetOffice_v1.7.4.6.zip .
