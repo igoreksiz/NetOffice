@@ -16,7 +16,7 @@ init:
   - git config --global core.autocrlf true
 
 before_build:
-  - cmd: >-
+  - cmd: |
       mkdir artifacts
       mkdir build_tmp
       xcopy /s /e /y Source build_tmp\Source\
@@ -30,7 +30,7 @@ after_build:
   - del /s /q Source\ClientApplication\bin\Release\ClientApplication.*
   - del /s /q Source\ClientApplication\bin\Release\stdole.dll
 
-  - cmd: >-
+  - cmd: |
       xcopy /s /e /y Documentation build_tmp\Documentation\
       xcopy /s /e /y Examples build_tmp\Examples\
       xcopy /s /e /y Tutorials build_tmp\Tutorials\
@@ -39,7 +39,7 @@ after_build:
       xcopy /y ChangeLog.txt build_tmp\
 
 before_package:
-  - cmd: >-
+  - cmd: |
       pushd build_tmp
       7z a -tzip ..\artifacts\NetOffice_v%_version%.zip .
       popd
