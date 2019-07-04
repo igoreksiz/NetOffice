@@ -43,9 +43,8 @@ after_test:
       xcopy /y BugFixes.txt build_tmp\
       xcopy /y ChangeLog.txt build_tmp\
   - cmd: |
-      pushd build_tmp
+      cd build_tmp
       7z a -tzip ..\artifacts\NetOffice_v1.7.4.6.zip .
-      popd
 
 artifacts:
   - path: 'artifacts\NetOffice_*.zip'
