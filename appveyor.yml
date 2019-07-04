@@ -27,9 +27,13 @@ build_script:
   - msbuild.exe Source\NetOffice.sln /Target:Build /Verbosity:normal /logger:%MSBuildLogger%
 
 after_build:
-  - del /s /q Source\ClientApplication\bin\Release\ClientApplication.*
-  - del /s /q Source\ClientApplication\bin\Release\stdole.dll
+  - cmd: |
+      del /s /q Source\ClientApplication\bin\Release\ClientApplication.*
+      del /s /q Source\ClientApplication\bin\Release\stdole.dll
 
+test: on
+
+after_test:
   - cmd: |
       xcopy /s /e /y Documentation build_tmp\Documentation\
       xcopy /s /e /y Examples build_tmp\Examples\
@@ -37,11 +41,9 @@ after_build:
       xcopy /y "Breaking Changes.txt" build_tmp\
       xcopy /y BugFixes.txt build_tmp\
       xcopy /y ChangeLog.txt build_tmp\
-
-before_package:
   - cmd: |
       pushd build_tmp
-      7z a -tzip ..\artifacts\NetOffice_v%_version%.zip .
+      7z a -tzip ..\artifacts\NetOffice_v1.7.4.6.zip .
       popd
 
 artifacts:
