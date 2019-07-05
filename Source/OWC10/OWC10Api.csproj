@@ -1,7 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <Import Project="..\..\.build\Common.props" />
   <PropertyGroup>
-    <TargetFrameworks>net40;net45</TargetFrameworks>
+    <TargetFrameworks>net40;net45;netcoreapp3.0</TargetFrameworks>
     <AssemblyTitle>OWC10</AssemblyTitle>
     <Description>NetOffice wrapper for Microsoft Office XP Web Components library.</Description>
     <RootNamespace>NetOffice.OWC10Api</RootNamespace>
