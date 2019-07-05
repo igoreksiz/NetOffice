@@ -35,6 +35,12 @@ steps:
     createLogFile: true
     logFileVerbosity: 'detailed'
 
+- task: VSTest@2
+  inputs:
+    testSelector: 'testAssemblies'
+    testAssemblyVer2: |
+      Source\NetOffice.Tests\bin\**\NetOffice.Tests.dll
+
 - task: PublishBuildArtifacts@1
   displayName: Publish NetOffice assemblies
   inputs:
