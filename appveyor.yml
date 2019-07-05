@@ -45,7 +45,7 @@ after_test:
       xcopy /y LICENSE.txt build_tmp\
   - cmd: |
       cd build_tmp
-      7z a -tzip ..\artifacts\NetOffice_v1.7.4.6.zip .
+      7z a -tzip ..\artifacts\NetOffice_v1.7.4.6_unsigned.zip .
 
 artifacts:
   - path: 'artifacts\NetOffice_*.zip'
