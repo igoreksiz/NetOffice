@@ -11,6 +11,13 @@ variables:
   BuildNumber: $(Build.BuildId)
 
 steps:
+- task: UseDotNet@2
+  displayName: 'Install .NET Core 3.0 Preview6'
+  inputs:
+    packageType: sdk
+    version: 3.0.100-preview6-012264
+    installationPath: $(Agent.ToolsDirectory)/dotnet
+
 - task: NuGetToolInstaller@0
 
 - task: NuGetCommand@2
