@@ -42,9 +42,9 @@ steps:
   displayName: Cleanup assemblies output
   inputs:
     sourceFolder: '$(Build.SourcesDirectory)\Source\ClientApplication\bin\$(buildConfiguration)'
-    contents:
-      - 'ClientApplication.*'
-      - 'stdole.dll'
+    contents: |
+      'ClientApplication.*'
+      'stdole.dll'
 
 - task: CopyFiles@2
   inputs:
