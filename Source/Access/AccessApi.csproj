@@ -1,7 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <Import Project="..\..\.build\Common.props" />
   <PropertyGroup>
-    <TargetFrameworks>net40;net45</TargetFrameworks>
+    <TargetFrameworks>net40;net45;netcoreapp3.0</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
     <AssemblyTitle>Access</AssemblyTitle>
     <Description>NetOffice wrapper for Microsoft Access Object Library.</Description>
     <RootNamespace>NetOffice.AccessApi</RootNamespace>

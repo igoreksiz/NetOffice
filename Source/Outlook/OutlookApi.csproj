@@ -1,7 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <Import Project="..\..\.build\Common.props" />
   <PropertyGroup>
-    <TargetFrameworks>net40;net45</TargetFrameworks>
+    <TargetFrameworks>net40;net45;netcoreapp3.0</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
     <AssemblyTitle>Outlook</AssemblyTitle>
     <Description>NetOffice wrapper for Microsoft Outlook Object Library.</Description>
     <RootNamespace>NetOffice.OutlookApi</RootNamespace>
@@ -25,6 +26,8 @@
       <Private>false</Private>
       <EmbedInteropTypes>false</EmbedInteropTypes>
     </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net40' Or '$(TargetFramework)' == 'net45'">
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>

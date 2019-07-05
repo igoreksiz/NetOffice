@@ -2,6 +2,7 @@
   <Import Project="..\..\.build\Common.props" />
   <PropertyGroup>
     <TargetFrameworks>net40;net45;netcoreapp3.0</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
     <AssemblyTitle>NetOffice</AssemblyTitle>
     <Description>NetOffice core library.</Description>
   </PropertyGroup>
@@ -9,22 +10,13 @@
     <PackageId>NetOfficeFw.NetOffice</PackageId>
     <Title>NetOffice Core Library</Title>
     <PackageTags>netoffice netofficefw NetOffice.Core office excel word outlook powerpoint access project visio publisher interop wrapper net40 net45 vsto</PackageTags>
-    <Company>NetOfficeFw</Company>
-    <Product>Netoffice</Product>
-    <Description>NetOffice Core Api</Description>
-    <Copyright>Copyright © 2012-2018 Sebastian Lange</Copyright>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <FileVersion>2.0.0.0</FileVersion>
-    <VersionPrefix>2.0.0</VersionPrefix>
-    <VersionSuffix>dev</VersionSuffix>
-    <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>NetOffice_v4.0.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
-  <ItemGroup Condition="'$(TargetFramework)' != 'netcoreapp3.0'">
+  <ItemGroup Condition="'$(TargetFramework)' == 'net40' Or '$(TargetFramework)' == 'net45'">
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <PropertyGroup Condition="'$(TargetFramework)' == 'net45'">
