@@ -21,7 +21,11 @@ environment:
   VisualStudioVersion: 16.0
 
 init:
-  git config --global core.autocrlf true
+  - git config --global core.autocrlf true
+  - ps: |
+      (New-Object System.Net.WebClient).DownloadFile('https://download.visualstudio.microsoft.com/download/pr/4d2dfaa1-4f9c-4526-bb6f-117d9d8bbd0e/a9fc9994c1b4d485ab41632b81bf4f56/dotnet-sdk-3.0.100-preview6-012264-win-x64.exe',"$env:TEMP\dotnet-sdk-3.0.100-preview6-012264-win-x64.exe")
+      Invoke-Command -ScriptBlock { & "$env:TEMP\dotnet-sdk-3.0.100-preview6-012264-win-x64.exe" /S /v /qn }
+
 
 build_script:
   - set MSBuildLogger="C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
