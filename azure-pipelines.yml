@@ -8,13 +8,13 @@ variables:
   buildPlatform: Any CPU
   buildConfiguration: Release
 
+steps:
 - task: CopyFiles@2
   inputs:
     sourceFolder: '$(Build.SourcesDirectory)\Source'
     contents: '**' 
     targetFolder: '$(Build.ArtifactStagingDirectory)\Source'
 
-steps:
 - task: NuGetToolInstaller@0
 
 - task: NuGetCommand@2
